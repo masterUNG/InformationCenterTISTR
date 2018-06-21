@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu1" android:title="ผลงาน" android:icon="@drawable/ic_product_24dp"/>
+    <item android:id="@+id/menu2" android:title="ความเชี่ยวชาญ" android:icon="@drawable/ic_person__24dp"/>
+    <item android:id="@+id/menu3" android:title="ความพร้อมงานวิจัย" android:icon="@drawable/ic_ready_24dp"/>
+    <item android:id="@+id/menu4" android:title="บริการงานวิจัย" android:icon="@drawable/ic_service_research_24dp"/>
+    <item android:id="@+id/menu5" android:title="การสนับสนุน" android:icon="@drawable/ic_suport_24dp"/>
+    <item android:id="@+id/menuback" android:title="กลับสู่หน้าหลัก" android:icon="@drawable/ic_arrow_back_24dp"/>
+
+</menu>
