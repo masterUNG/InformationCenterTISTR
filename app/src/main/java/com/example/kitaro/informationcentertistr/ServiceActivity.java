@@ -16,9 +16,11 @@ import android.widget.ListView;
 
 import com.example.kitaro.informationcentertistr.fragment.AgFragment;
 import com.example.kitaro.informationcentertistr.fragment.EnFragment;
+import com.example.kitaro.informationcentertistr.fragment.ExpertFragment;
 import com.example.kitaro.informationcentertistr.fragment.FoodFragment;
 import com.example.kitaro.informationcentertistr.fragment.HerbFragment;
 import com.example.kitaro.informationcentertistr.fragment.MatFragment;
+import com.example.kitaro.informationcentertistr.fragment.ProduceFragment;
 import com.example.kitaro.informationcentertistr.fragment.RobotFragment;
 import com.example.kitaro.informationcentertistr.utility.DrawerListViewAdapter;
 import com.example.kitaro.informationcentertistr.utility.MyConstant;
@@ -108,10 +110,31 @@ public class ServiceActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
+
                 if (position == (titleStrings.length - 1)) {
                     //startActivity(new Intent(ServiceActivity.this, MainActivity.class));
                     finish();
                 }
+
+                switch (position) {
+                    case 0:
+                        getSupportFragmentManager()
+                                .beginTransaction()
+                                .replace(R.id.contentServiceFragment,
+                                        ProduceFragment.produceInstance(indexAnInt))
+                                .commit();
+                        break;
+                    case 1:
+                        getSupportFragmentManager()
+                                .beginTransaction()
+                                .replace(R.id.contentServiceFragment,
+                                        ExpertFragment.expertInstance(indexAnInt))
+                                .commit();
+                        break;
+
+
+                }
+
 
                 drawerLayout.closeDrawers();
             }

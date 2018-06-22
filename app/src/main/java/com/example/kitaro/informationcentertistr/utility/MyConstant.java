@@ -4,8 +4,13 @@ import com.example.kitaro.informationcentertistr.R;
 
 public class MyConstant {
 
+    private String[] id_ec_Strings = new String[]{"1", "4", "2", "3", "5", "6"};
 
-    private String urlListDriverString = "http://203.150.10.52/test/listdriver.php";
+
+    private String urlProduct = "http://203.150.10.52/mkm_connect/tb_bestpro.php";
+    private String urlExpert = "http://203.150.10.52/mkm_connect/tb_per.php";
+    private String urlPicture = "http://203.150.10.52/mkm_connect/imgs/";
+
 
     private int[] iconInts = new int[]{
             R.drawable.ic_product_24dp,
@@ -41,6 +46,22 @@ public class MyConstant {
 
 //    About Getter
 
+
+    public String getUrlPicture() {
+        return urlPicture;
+    }
+
+    public String getUrlExpert() {
+        return urlExpert;
+    }
+
+    public String[] getId_ec_Strings() {
+        return id_ec_Strings;
+    }
+
+    public String getUrlProduct() {
+        return urlProduct;
+    }
 
     public int[] getIconInts() {
         return iconInts;

@@ -38,11 +38,17 @@
 
     <!--Drawer Layout-->
     <LinearLayout
+        android:layout_marginTop="?attr/actionBarSize"
         android:layout_gravity="start"
         android:background="#ffffff"
         android:orientation="vertical"
         android:layout_width="320dp"
         android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
         <TextView
             android:textSize="@dimen/h1"
