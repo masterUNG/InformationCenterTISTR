@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--Logo-->
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!--Title-->
+            <TextView
+                android:layout_margin="16dp"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textSize="35sp"
+                android:text="InnoFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!--detail-->
+            <TextView
+                android:maxLines="5"
+                android:text="@string/detail_food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--icon Hub-->
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--Icon-->
+                <ImageView
+                    android:layout_marginRight="@dimen/margin"
+                    android:src="@drawable/ag_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!--detail-->
+                <TextView
+                    android:maxLines="3"
+                    android:text="@string/detail_food"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--Icon-->
+                <ImageView
+                    android:layout_marginRight="@dimen/margin"
+                    android:src="@drawable/en_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!--detail-->
+                <TextView
+                    android:maxLines="3"
+                    android:text="@string/detail_food"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--Icon-->
+                <ImageView
+                    android:layout_marginRight="@dimen/margin"
+                    android:src="@drawable/food_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!--detail-->
+                <TextView
+                    android:maxLines="3"
+                    android:text="@string/detail_food"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--Icon-->
+                <ImageView
+                    android:layout_marginRight="@dimen/margin"
+                    android:src="@drawable/herb_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!--detail-->
+                <TextView
+                    android:maxLines="3"
+                    android:text="@string/detail_food"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--Icon-->
+                <ImageView
+                    android:layout_marginRight="@dimen/margin"
+                    android:src="@drawable/mat_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!--detail-->
+                <TextView
+                    android:maxLines="3"
+                    android:text="@string/detail_food"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

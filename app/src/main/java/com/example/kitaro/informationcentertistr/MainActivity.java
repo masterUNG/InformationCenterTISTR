@@ -31,42 +31,57 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         cardViewAg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,MainInnoAg.class));
+//                startActivity(new Intent(MainActivity.this,MainInnoAg.class));
+                myIntent(0);
             }
         });
         cardViewEN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,MainInnoEN.class));
+//                startActivity(new Intent(MainActivity.this,MainInnoEN.class));
+                myIntent(1);
             }
         });
         cardViewFood.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,MainInnoFood.class));
+//                startActivity(new Intent(MainActivity.this,MainInnoFood.class));
+                myIntent(2);
             }
         });
         cardViewHerb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,MainInnoHerb.class));
+//                startActivity(new Intent(MainActivity.this,MainInnoHerb.class));
+                myIntent(3);
             }
         });
         cardViewMat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,MainInnoMat.class));
+//                startActivity(new Intent(MainActivity.this,MainInnoMat.class));
+                myIntent(4);
             }
         });
         cardViewRobot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,MainInnoRobot.class));
+//                startActivity(new Intent(MainActivity.this,MainInnoRobot.class));
+                myIntent(5);
             }
         });
 
 
     }// Main Method
+
+    private void myIntent(int index) {
+
+        Intent intent = new Intent(MainActivity.this, ServiceActivity.class);
+        intent.putExtra("Index", index);
+        startActivity(intent);
+        //finish();
+
+    }
 
     @Override
     public void onClick(View v) {

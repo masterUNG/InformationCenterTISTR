@@ -23,7 +23,8 @@
         <activity android:name=".MainInnoEN" />
         <activity android:name=".MainInnoHerb" />
         <activity android:name=".MainInnoMat" />
-        <activity android:name=".MainInnoRobot"></activity>
+        <activity android:name=".MainInnoRobot" />
+        <activity android:name=".ServiceActivity"></activity>
     </application>
 
 </manifest>
