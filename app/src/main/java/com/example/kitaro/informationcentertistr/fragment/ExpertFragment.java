@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -11,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.kitaro.informationcentertistr.R;
+import com.example.kitaro.informationcentertistr.utility.ExpertRecyclerViewAdapter;
 import com.example.kitaro.informationcentertistr.utility.GetAllData;
 import com.example.kitaro.informationcentertistr.utility.MyConstant;
 
@@ -76,9 +78,17 @@ public class ExpertFragment extends Fragment {
                     picNameStringList.add(myConstant.getUrlPicture() + jsonObject.getString("picname_per") + ".jpg");
 
                 }   //if
-
             }   // for
             Log.d("22JuneV2", "Pic ==> " + picNameStringList.toString());
+
+            ExpertRecyclerViewAdapter expertRecyclerViewAdapter = new ExpertRecyclerViewAdapter(getActivity(),
+                    empNameStringList, emplNameStringList, specialStringList, picNameStringList);
+
+            LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity(),
+                    LinearLayoutManager.VERTICAL, false);
+            recyclerView.setLayoutManager(linearLayoutManager);
+
+            recyclerView.setAdapter(expertRecyclerViewAdapter);
 
         } catch (Exception e) {
             Log.d("22JuneV2", "e Class ==> " + e.toString());
